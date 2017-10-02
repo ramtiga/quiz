@@ -12,6 +12,8 @@
 		D91A65F81F80376C005CBD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A65F61F80376C005CBD58 /* Main.storyboard */; };
 		D91A65FA1F80376C005CBD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91A65F91F80376C005CBD58 /* Assets.xcassets */; };
 		D91A65FD1F80376C005CBD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A65FB1F80376C005CBD58 /* LaunchScreen.storyboard */; };
+		D955D3D71F8148F700AF1749 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = D955D3D61F8148F700AF1749 /* question.csv */; };
+		D955D3D91F814E7300AF1749 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D91A65F91F80376C005CBD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91A65FC1F80376C005CBD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91A65FE1F80376C005CBD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D955D3D61F8148F700AF1749 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				D91A65F91F80376C005CBD58 /* Assets.xcassets */,
 				D91A65FB1F80376C005CBD58 /* LaunchScreen.storyboard */,
 				D91A65FE1F80376C005CBD58 /* Info.plist */,
+				D955D3D61F8148F700AF1749 /* question.csv */,
+				D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */,
 			);
 			path = MyQuiz;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				D91A65FD1F80376C005CBD58 /* LaunchScreen.storyboard in Resources */,
 				D91A65FA1F80376C005CBD58 /* Assets.xcassets in Resources */,
+				D955D3D71F8148F700AF1749 /* question.csv in Resources */,
 				D91A65F81F80376C005CBD58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				D91A65F51F80376C005CBD58 /* ViewController.swift in Sources */,
 				D91A65F31F80376C005CBD58 /* AppDelegate.swift in Sources */,
+				D955D3D91F814E7300AF1749 /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				D91A66031F80376C005CBD58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
