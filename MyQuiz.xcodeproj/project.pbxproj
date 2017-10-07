@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90AB4E81F857E4600D5DFAC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AB4E71F857E4600D5DFAC /* StartViewController.swift */; };
 		D91A65F31F80376C005CBD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A65F21F80376C005CBD58 /* AppDelegate.swift */; };
 		D91A65F51F80376C005CBD58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A65F41F80376C005CBD58 /* ViewController.swift */; };
 		D91A65F81F80376C005CBD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A65F61F80376C005CBD58 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D90AB4E71F857E4600D5DFAC /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D91A65EF1F80376C005CBD58 /* MyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A65F21F80376C005CBD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D91A65F41F80376C005CBD58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				D91A65FE1F80376C005CBD58 /* Info.plist */,
 				D955D3D61F8148F700AF1749 /* question.csv */,
 				D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */,
+				D90AB4E71F857E4600D5DFAC /* StartViewController.swift */,
 			);
 			path = MyQuiz;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91A65F51F80376C005CBD58 /* ViewController.swift in Sources */,
+				D90AB4E81F857E4600D5DFAC /* StartViewController.swift in Sources */,
 				D91A65F31F80376C005CBD58 /* AppDelegate.swift in Sources */,
 				D955D3D91F814E7300AF1749 /* QuestionDataManager.swift in Sources */,
 			);
