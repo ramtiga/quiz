@@ -33,10 +33,6 @@ class QuestionViewController: UIViewController {
       answer2Button.setTitle(questionData.answer2, for: UIControlState.normal)
       answer3Button.setTitle(questionData.answer3, for: UIControlState.normal)
       answer4Button.setTitle(questionData.answer4, for: UIControlState.normal)
-      
-      
-      
-
     }
 
     override func didReceiveMemoryWarning() {

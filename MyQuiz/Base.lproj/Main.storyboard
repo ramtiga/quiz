@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -103,7 +103,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="tabAnswer1Button:" destination="Z4z-qS-Jcw" eventType="touchUpInside" id="IXX-9i-3YL"/>
+                                            <action selector="tapAnswer1Button:" destination="Z4z-qS-Jcw" eventType="touchUpInside" id="p8F-ql-RpR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="772-nY-Kwa">
@@ -144,8 +144,8 @@
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="Tnt-if-eCf">
                                 <rect key="frame" x="86.5" y="232" width="202" height="202"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="kyu-YI-aZm">
-                                <rect key="frame" x="87" y="232" width="201" height="201"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="kyu-YI-aZm">
+                                <rect key="frame" x="87" y="233" width="201" height="201"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="925.60000000000002" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="KBW-Ke-StS">
             <objects>
-                <viewController storyboardIdentifier="result" id="rqd-06-v8N" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="rqd-06-v8N" customClass="ResultViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ISG-oq-pj3"/>
                         <viewControllerLayoutGuide type="bottom" id="t50-12-6XT"/>
@@ -228,12 +228,19 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sfN-t9-0Jz" kind="unwind" unwindAction="goToTitle:" id="OPv-qa-ve7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="LFn-U2-8KE" id="dtH-MS-Igi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k46-ib-I0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sfN-t9-0Jz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1652" y="138.98050974512745"/>
         </scene>

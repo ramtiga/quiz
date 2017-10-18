@@ -44,9 +44,9 @@ class StartViewController: UIViewController {
       return
     }
     //問題文セット
-    nextViewController.questionData = questionData
+    nextViewController.questionData = guestionData
   }
   
-  @IBAction func goToTitle(_ segue: UIStoryboard) {
+  @IBAction func goToTitle(_ segue: UIStoryboardSegue) {
   }
 }
