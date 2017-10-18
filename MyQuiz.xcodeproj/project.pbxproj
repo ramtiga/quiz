@@ -15,6 +15,8 @@
 		D91A65FD1F80376C005CBD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A65FB1F80376C005CBD58 /* LaunchScreen.storyboard */; };
 		D955D3D71F8148F700AF1749 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = D955D3D61F8148F700AF1749 /* question.csv */; };
 		D955D3D91F814E7300AF1749 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */; };
+		D9B01D121F9790200085FC98 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B01D111F9790200085FC98 /* QuestionViewController.swift */; };
+		D9B01D151F9790C60085FC98 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B01D141F9790C60085FC98 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D91A65FE1F80376C005CBD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D955D3D61F8148F700AF1749 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		D9B01D111F9790200085FC98 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D9B01D141F9790C60085FC98 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B01D151F9790C60085FC98 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				D91A65F11F80376C005CBD58 /* MyQuiz */,
 				D91A65F01F80376C005CBD58 /* Products */,
+				D9B01D131F9790C60085FC98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +75,17 @@
 				D955D3D61F8148F700AF1749 /* question.csv */,
 				D955D3D81F814E7300AF1749 /* QuestionDataManager.swift */,
 				D90AB4E71F857E4600D5DFAC /* StartViewController.swift */,
+				D9B01D111F9790200085FC98 /* QuestionViewController.swift */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		D9B01D131F9790C60085FC98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9B01D141F9790C60085FC98 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91A65F51F80376C005CBD58 /* ViewController.swift in Sources */,
+				D9B01D121F9790200085FC98 /* QuestionViewController.swift in Sources */,
 				D90AB4E81F857E4600D5DFAC /* StartViewController.swift in Sources */,
 				D91A65F31F80376C005CBD58 /* AppDelegate.swift in Sources */,
 				D955D3D91F814E7300AF1749 /* QuestionDataManager.swift in Sources */,
